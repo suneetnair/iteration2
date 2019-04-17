@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="60; url=Results(2).html" />
+    <title>Bedroom</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/XabtmCk.png">
+    <script src="Timer.js"></script>
+    <script src="Bedroom.js"></script>
+
+    <link rel="stylesheet" href="BedroomCSS.css" />
+
+</head>
+
+<body>
+    <div class="bedroom-senorio">
+
+        <!-- The background img -->
+        <img src="https://i.imgur.com/wl9EH51.jpg" alt="Can not find the image source." class="background-img">
+        
+        <!-- The light img -->
+        <div class="items light">
+            <img id="lamp" onClick="changelamp()" src="https://i.imgur.com/18BQBfF.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- <div class="audiomp3">
+            <audio src="bensound-buddy.mp3" id="aud" autoplay></audio>
+            <img src="https://i.imgur.com/lPF1RQr.png" id="playpause" />
+        </div> -->
+
+        <!-- The background music -->
+        <audio src="bensound-buddy.mp3" autoplay></audio>
+
+        <!-- The tablelight img -->
+        <div class="items tablelight">
+            <img id="table-light" onClick="changetablelight()" src="https://i.imgur.com/yTvafBA.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- The laptop img -->
+        <div class="items laptop">
+            <img id="laptop" onClick="changelaptop()" src="https://i.imgur.com/TcXacHI.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- The phone img -->
+        <div class="items phone">
+            <img id="phone" onClick="changephone()" src="https://i.imgur.com/d9FZh02.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- The air conditionor img -->
+        <div class="items ac">
+            <img id="ac" onClick="changeac()" src="https://i.imgur.com/oKMDUls.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- The heater img -->
+        <div class="items heater">
+            <img id="heater" onClick="changeheater()" src="https://i.imgur.com/mQjLPwO.png"
+                alt="Can not find the image source.">
+        </div>
+
+        <!-- The backbutton img -->
+        <div class="backbutton">
+            <a href="ChooseRooms.html"><img src="https://i.imgur.com/oYTrppb.png" alt="Can not find the image source."
+                    class="back-button"></a>
+        </div>
+
+        <!-- The finish button img -->
+        <div class="items finish">
+            <a href="Results(2).html"><img src="https://i.imgur.com/BjUeJPr.png" alt="Can not find the image source."
+                    class="finish-button"></a>
+        </div>
+
+        <!-- The bird in the window img -->
+        <div class="bird">
+            <img src="https://i.imgur.com/brXRHYl.png" alt="Can not find the image source." id="birdimg">
+        </div>
+
+        <!-- The cloud 1 in the window img -->
+        <div class="cloud1">
+            <img src="https://i.imgur.com/N3wQTBv.png" alt="Can not find the image source." id="cloudimg1">
+        </div>
+
+        <!-- The cloud 2 in the window img -->
+        <div class="cloud2">
+            <img src="https://i.imgur.com/oUXbJss.png" alt="Can not find the image source." id="cloudimg2">
+        </div>
+
+        <!-- The tree in the window img -->
+        <div class="tree">
+            <img src="https://i.imgur.com/9lcVAer.png" alt="Can not find the image source." id="treeimg">
+        </div>
+
+        <!-- The leave in the window img -->
+        <div class="leave">
+            <img src="https://i.imgur.com/ypW2WQA.png" alt="Can not find the image source." id="leaveimg">
+        </div>
+
+        <!-- The mountain in the window img -->
+        <div class="mountain">
+            <img src="https://i.imgur.com/9KlujsO.png" alt="Can not find the image source." id="mountainimg">
+        </div>
+
+        <!-- The timer background img -->
+        <div class="timerbackground">
+            <img src="https://i.imgur.com/IUOlsqi.png" alt="Can not find the image source." id="timerbackgroundimg">
+        </div>
+
+        <!-- The timer -->
+        <div id="showtime">
+
+        </div>
+
+    </div>
+
+    <script>
+        // hide the bird in the window
+        var bird = document.getElementById("birdimg");
+        bird.style.display = "none";
+
+        // hide the cloud 1 in the window
+        var cloud1 = document.getElementById("cloudimg1")
+        cloud1.style.display = "none";
+
+        // hide the cloud 2 in the window
+        var cloud2 = document.getElementById("cloudimg2")
+        cloud2.style.display = "none";
+
+        // hide the tree in the window
+        var tree = document.getElementById("treeimg")
+        tree.style.display = "none";
+
+        // hide the leave in the window
+        var leave = document.getElementById("leaveimg")
+        leave.style.display = "none";
+
+        // hide the mountain in the window
+        var mountain = document.getElementById("mountainimg")
+        mountain.style.display = "none";
+
+    </script>
+</body>
+
+</html>
