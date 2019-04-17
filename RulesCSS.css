@@ -1,0 +1,77 @@
+body,
+div,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.rule-page {
+    position: absolute;
+    background-color: #37c7ec;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+/* div {
+            border: 1px solid lawngreen;
+        } */
+
+.ruletitle {
+    height: 150px;
+    width: 1080px;
+    margin: 0 auto;
+    font-family: "Comic Sans MS";
+    font-size: 60px;
+}
+
+#rule-title {
+    position: relative;
+    top: 40px;
+    left: 80px;
+}
+
+.main {
+    margin: 0 auto;
+    width: 1080px;
+    /* overflow: hidden; */
+}
+
+.window {
+    float: left;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+
+#window-img {
+    width: 750px;
+}
+
+.guidlines {
+    float: left;
+    position: relative;
+    width: 500px;
+    font-size: 35px;
+    top: -360px;
+    left: 260px;
+    font-family: "Comic Sans MS";
+    font: bolder;
+}
+
+.letsgo {
+    float: left;
+    position: relative;
+    /* top: 500px; */
+    left: 330px;
+    top: -40px;
+
+}
+
+/* .audiomp3 {
+            float: left;
+            position: relative;
+        } */

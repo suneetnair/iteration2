@@ -1,0 +1,36 @@
+#header {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+#container {
+    background-color: #FFFFFF;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bubble {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.home {
+    position: relative;
+    top: -200px;
+    left: 350px;
+    z-index: 2;
+}
+
+.congrats {
+    position: relative;
+    top: -550px;
+    left: 25px;
+    z-index: 2;
+}

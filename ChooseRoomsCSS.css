@@ -1,0 +1,93 @@
+body,
+div,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* div {
+            border: 1px solid lawngreen;
+        } */
+
+.chooseroom-page {
+    position: absolute;
+    background-color: #37c7ec;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.choose-room {
+    height: 100px;
+    /* width: 1080px; */
+    /* margin: 0 auto; */
+    font: 700 60px "Comic Sans MS";
+    color: orange;
+    /* text-align: center; */
+    /* top: 100px; */
+    /* text-shadow: 0 0 20px #fdec84,
+                10px -10px 30px #ffae35,
+                20px -20px 40px #ec760c,
+                -20px -60px 50px #cd4607,
+                0px -80px 60px #973717,
+                10px -40px 70px #451b0e; */
+}
+
+#choose-room-words {
+    position: relative;
+    top: 60px;
+    left: 30px;
+}
+
+.bedroom-button {
+    float: left;
+    position: relative;
+    top: 510px;
+    left: -200px;
+}
+
+#bedroom-button-img {
+    width: 300px;
+}
+
+.bedroom {
+    float: left;
+    position: relative;
+    top: 160px;
+    left: 100px;
+}
+
+#bedroom-img {
+    width: 300px;
+}
+
+.bathroom {
+    float: left;
+    position: relative;
+    top: 160px;
+    left: 80px;
+}
+
+#bathroom-img {
+    width: 300px;
+}
+
+.bathroom-button {
+    float: left;
+    position: relative;
+    top: 200px;
+    left: 660px;
+    /* height: 100px; */
+}
+
+#bathroom-button-img {
+    width: 330px;
+}
+
+/* .audiomp3 {
+            float: left;
+            position: relative;
+        } */
