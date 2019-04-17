@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="60; url=Results(2).html" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bathroom</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/XabtmCk.png">
+    <script src="Timer.js"></script>
+    <script src="Bathroom.js"></script>
+    <link rel="stylesheet" href="BathroomCSS.css" />
+</head>
+
+<body>
+    <div class="bathroom-senorio">
+        <!-- The background of the website. -->
+        <img src="https://i.imgur.com/CWBe3M6.jpg" alt="Can not find the image source." class="bg-img">
+
+        <!-- The washing machine-on img. -->
+        <div class="item washing"><img id="washingmachine" onClick="changewashing()"
+                src="https://i.imgur.com/geGQoDE.png"></div>
+
+
+        <!-- <div class="audiomp3">
+            <audio src="bensound-buddy.mp3" id="aud" autoplay></audio>
+            <img src="https://i.imgur.com/lPF1RQr.png" id="playpause" />
+        </div> -->
+        
+        <audio src="bensound-buddy.mp3" autoplay></audio>
+
+        <!-- The bathtub-on img. -->
+        <div class="item bathtub"><img id="bathtub" onClick="changebathtub()" src="https://i.imgur.com/hrbT4rT.png">
+        </div>
+        <!-- The dryer1-on img. -->
+        <div class="item dryer1"><img id="dryerno1" onClick="changedryer1()" src="https://i.imgur.com/NrUbPgr.png">
+        </div>
+        <!-- The dryer2-on img. -->
+        <div class="item dryer2"><img id="dryerno2" onClick="changedryer2()" src="https://i.imgur.com/hbZM0rH.png">
+        </div>
+        <!-- The faucet-open img. -->
+        <div class="item faucet"><img id="faucet" onClick="changefaucet()" src="https://i.imgur.com/HnuOG4x.png"></div>
+        <!-- The light-on img. -->
+        <div class="item light"><img id="light" onClick="changelight()" src="https://i.imgur.com/z41KUeJ.png"></div>
+        <!-- The back button img. -->
+        <div class="item backbutton">
+            <a href="ChooseRooms.html"><img src="https://imgur.com/oYTrppb.png" alt="Can not find the image source."
+                    class="back-button"></a>
+        </div>
+
+        <div class="item finish">
+            <a href="Results(2).html"><img src="https://i.imgur.com/BjUeJPr.png" alt="Can not find the image source."
+                    class="finish-button"></a>
+        </div>
+        <!-- The cloud1 img. -->
+        <div class="item cloud1">
+            <img src="https://i.imgur.com/fW2CXeD.png" alt="Can not find the image source." id="cloud1img">
+        </div>
+        <!-- The cloud2 img. -->
+        <div class="item cloud2">
+            <img src="https://i.imgur.com/dCHHZsO.png" alt="Can not find the image source." id="cloud2img">
+        </div>
+        <!-- The sky img. -->
+        <div class="item sky">
+            <img src="https://i.imgur.com/lsU0Hs4.png" alt="Can not find the image source." id="skyimg">
+        </div>
+        <!-- The sun img. -->
+        <div class="item sun">
+            <img src="https://i.imgur.com/xUEuCyw.png" alt="Can not find the image source." id="sunimg">
+        </div>
+        <!-- The tree1 img. -->
+        <div class="item tree1">
+            <img src="https://i.imgur.com/YBf9WzN.png" alt="Can not find the image source." id="tree1img">
+        </div>
+        <!-- The tree2 img. -->
+        <div class="item tree2">
+            <img src="https://i.imgur.com/WHzhVuO.png" alt="Can not find the image source." id="tree2img">
+        </div>
+        <!-- The background of the timer img. -->
+        <div class="timerbackground">
+            <img src="https://i.imgur.com/IUOlsqi.png" alt="Can not find the image source." id="timerbackgroundimg">
+        </div>
+        <!-- The timer. -->
+        <div id="showtime">
+
+        </div>
+
+        <script>
+            // hide cloud1
+            var cloud1 = document.getElementById("cloud1img");
+            cloud1.style.display = "none";
+            // hide cloud2
+            var cloud2 = document.getElementById("cloud2img")
+            cloud2.style.display = "none";
+            //hide sky
+            var sky = document.getElementById("skyimg")
+            sky.style.display = "none";
+            //hide sun
+            var sun = document.getElementById("sunimg")
+            sun.style.display = "none";
+            //hide tree1
+            var tree1 = document.getElementById("tree1img")
+            tree1.style.display = "none";
+            //hide tree2
+            var tree2 = document.getElementById("tree2img")
+            tree2.style.display = "none";
+
+
+        </script>
+</body>
+
+</html>
