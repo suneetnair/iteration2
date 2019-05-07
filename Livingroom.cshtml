@@ -1,0 +1,178 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="60; url=LivingroomVisual" />
+    <title>Livingroom</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/XabtmCk.png">
+    <link href="~/Content/LivingroomCSS.css" rel="stylesheet" />
+    <script src="~/Scripts/Timer.js"></script>
+    <script src="~/Scripts/Livingroom.js"></script>
+
+</head>
+
+<body>
+    <div class="livingroom-senario">
+        <img src="https://i.imgur.com/kxNDe1u.png" alt="Can not find the image source." class="background-img">
+
+        <div class="items lights-on">
+            <img src="https://i.imgur.com/bYn1FQ1.png" alt="Can not find the image source." id="lights-on-img">
+        </div>
+
+        <div class="items stand-light-off">
+            <img onclick="changestandlight()" src="https://i.imgur.com/0GGDy4J.png" alt="Can not find the image source."
+                 id="stand-light-off-img">
+        </div>
+
+        <div class="items stand-light-on">
+            <img src="https://i.imgur.com/Ny3SWsE.png" alt="Can not find the image source." id="stand-light-on-img">
+        </div>
+
+        <div class="items stereo-off">
+            <img onclick="changestereo()" src="https://i.imgur.com/coiSLeR.png" alt="Can not find the image source."
+                 id="stereo-off-img">
+        </div>
+
+        <div class="items stereo-on">
+            <img src="https://i.imgur.com/YVGffLF.png" alt="Can not find the image source." id="stereo-on-img">
+        </div>
+
+        <div class="items tv-on">
+            <img onClick="changetv()" src="https://i.imgur.com/rVsYxvX.png" alt="Can not find the image source."
+                 id="tv-on-img">
+        </div>
+
+        <div class="items airconditionor">
+            <img onClick="changeac()" src="https://i.imgur.com/KtBlIsk.png" alt="Can not find the image source."
+                 id="airconditionor-img">
+        </div>
+
+        <div class="items airconditionor-on">
+            <img src="https://i.imgur.com/7vQsTqg.png" alt="Can not find the image source." id="airconditionor-on-img">
+        </div>
+
+        <div class="items sofa">
+            <img src="https://i.imgur.com/Nix7Fg3.png" alt="Can not find the image source." id="sofa-img">
+        </div>
+
+        <div class="items wallheater-off">
+            <img onclick="changewallheater()" src="https://i.imgur.com/YrXnsyb.png" alt="Can not find the image source."
+                 id="wallheater-off-img">
+        </div>
+
+
+        <div class="items window">
+            <img src="https://i.imgur.com/nIuSg1o.png" alt="Can not find the image source." id="window-img">
+        </div>
+
+        <div class="items wallheater-on">
+            <img src="https://i.imgur.com/hOnnCBV.png" alt="Can not find the image source." id="wallheater-on-img">
+        </div>
+
+        <div class="items sun">
+            <img src="https://i.imgur.com/hvbVRSZ.png" alt="Can not find the image source." id="sun-img">
+        </div>
+
+        <div class="items cloud1">
+            <img src="https://i.imgur.com/4KckFZJ.png" alt="Can not find the image source." id="cloud1-img">
+        </div>
+
+        <div class="items cloud2">
+            <img src="https://i.imgur.com/yt83aHh.png" alt="Can not find the image source." id="cloud2-img">
+        </div>
+
+        <div class="items mountain">
+            <img src="https://i.imgur.com/UHKj1Cp.png" alt="Can not find the image source." id="mountain-img">
+        </div>
+
+        <div class="items tree1">
+            <img src="https://i.imgur.com/8FZv0c3.png" alt="Can not find the image source." id="tree1-img">
+        </div>
+
+        <div class="items tree2">
+            <img src="https://i.imgur.com/EDsIDmC.png" alt="Can not find the image source." id="tree2-img">
+        </div>
+
+        <div class="items toplight">
+            <img onClick="changetoplight()" src="https://i.imgur.com/ktBIa9w.png" alt="Can not find the image source."
+                 id="toplight-img">
+        </div>
+
+        <div class="items chair">
+            <img src="https://i.imgur.com/XVcl5LM.png" alt="Can not find the image source." id="chair-img">
+        </div>
+
+        <div class="items dvd">
+            <img src="https://i.imgur.com/7agzICA.png" alt="Can not find the image source." id="dvd-img">
+        </div>
+
+        <!-- The timer background img -->
+        <div class="timerbackground">
+            <img src="https://i.imgur.com/IUOlsqi.png" alt="Can not find the image source." id="timerbackgroundimg">
+        </div>
+
+        <!-- The timer -->
+        <div id="showtime">
+
+        </div>
+
+        <!-- The backbutton img -->
+        <div class="backbutton">
+            <a href="~/Home/ChooseRooms">
+                <img src="https://i.imgur.com/oYTrppb.png" alt="Can not find the image source."
+                     class="back-button">
+            </a>
+        </div>
+
+        <audio src="~/Content/bensound-buddy.mp3" autoplay type="audio/mpeg"></audio>
+
+        <div class="items finish">
+            <a href="~/Home/LivingroomVisual">
+                <img src="https://i.imgur.com/BjUeJPr.png" alt="Can not find the image source."
+                     class="finish-button">
+         </div>
+    </div>
+
+        <script>
+
+            var sun = document.getElementById("sun-img");
+            sun.style.display = "none";
+
+            var cloud1 = document.getElementById("cloud1-img");
+            cloud1.style.display = "none";
+
+            var cloud2 = document.getElementById("cloud2-img");
+            cloud2.style.display = "none";
+
+            var mountain = document.getElementById("mountain-img");
+            mountain.style.display = "none";
+
+            var tree1 = document.getElementById("tree1-img");
+            tree1.style.display = "none";
+
+            var tree2 = document.getElementById("tree2-img");
+            tree2.style.display = "none";
+
+            var airconditionor = document.getElementById("airconditionor-on-img");
+
+            var toplight = document.getElementById("lights-on-img");
+
+            var standlight = document.getElementById("stand-light-on-img");
+
+            var stereo = document.getElementById("stereo-on-img");
+
+            var wallheater = document.getElementById("wallheater-on-img");
+
+        </script>
+
+</body>
+
+</html>

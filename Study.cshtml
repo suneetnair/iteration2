@@ -1,0 +1,177 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="60; url=StudyVisual" />
+    <title>Study</title>
+    <link rel="shortcut icon" type="image/png" href="https://i.imgur.com/XabtmCk.png">
+    <script src="~/Scripts/Timer.js"></script>
+    <script src="~/Scripts/Study.js"></script>
+    <link href="~/Content/StudyCSS.css" rel="stylesheet" />
+    <style>
+        .finish {
+            width: 170px;
+            height: 70px;
+            top: -1550px;
+            left: 180px;
+        }
+
+        .finish-button {
+            width: 150px;
+            height:70px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="study-senario">
+        <img src="https://i.imgur.com/xlIGfbm.png" alt="Can not find the image source." class="background-img">
+
+        <div class="items table">
+            <img src="https://i.imgur.com/9GEdkW5.png" alt="Can not find the image source." id="table-img">
+        </div>
+
+        <div class="items tablelight-off">
+            <img onclick="changetablelight()" src="https://i.imgur.com/0fcRPP7.png" alt="Can not find the image source."
+                 id="tablelight-off-img">
+        </div>
+
+        <div class="items tablelight-on">
+            <img src="https://i.imgur.com/lNfXi4Y.png" alt="Can not find the image source." id="tablelight-on-img">
+        </div>
+
+        <div class="items desktop-on">
+            <img onclick="changedesktop()" src="https://i.imgur.com/ez7ASkc.png" alt="Can not find the image source."
+                 id="desktop-on-img">
+        </div>
+
+        <div class="items fridge-on">
+            <img onclick="changefridge()" src="https://i.imgur.com/BPOxr1C.png" alt="Can not find the image source."
+                 id="fridge-on-img">
+        </div>
+
+        <div class="items fan-on">
+            <img src="https://i.imgur.com/xUL6PBH.png" alt="Can not find the image source." id="fan-on-img">
+        </div>
+
+        <div class="items fan-off">
+            <img onclick="changefan()" src="https://i.imgur.com/MBVsLZN.png" alt="Can not find the image source."
+                 id="fan-off-img">
+        </div>
+
+        <div class="items shelf">
+            <img src="https://i.imgur.com/cZH4IEU.png" alt="Can not find the image source." id="shelf-img">
+        </div>
+
+        <div class="items toplight-off">
+            <img onclick="changetoplight()" src="https://i.imgur.com/TBUgJ2r.png" alt="Can not find the image source."
+                 id="toplight-off-img">
+        </div>
+
+        <div class="items toplight-on">
+            <img src="https://i.imgur.com/RWFvqm7.png" alt="Can not find the image source." id="toplight-on-img">
+        </div>
+
+        <div class="items ac-off">
+            <img onclick="changeac()" src="https://i.imgur.com/pg2sEpD.png" alt="Can not find the image source."
+                 id="ac-off-img">
+        </div>
+
+        <div class="items ac-on">
+            <img src="https://i.imgur.com/db5YN65.png" alt="Can not find the image source." id="ac-on-img">
+        </div>
+
+        <div class="items window">
+            <img src="https://i.imgur.com/TP2kXVZ.png" alt="Can not find the image source." id="window-img">
+        </div>
+
+        <div class="items sky">
+            <img src="https://i.imgur.com/a0yxMTP.png" alt="Can not find the image source." id="sky-img">
+        </div>
+
+        <div class="items grass">
+            <img src="https://i.imgur.com/7TervHW.png" alt="Can not find the image source." id="grass-img">
+        </div>
+
+        <div class="items tree1">
+            <img src="https://i.imgur.com/AfElQHt.png" alt="Can not find the image source." id="tree1-img">
+        </div>
+
+        <div class="items tree2">
+            <img src="https://i.imgur.com/eGTxh6q.png" alt="Can not find the image source." id="tree2-img">
+        </div>
+
+        <div class="items sun">
+            <img src="https://i.imgur.com/TXZJMWf.png" alt="Can not find the image source." id="sun-img">
+        </div>
+
+        <div class="items cloud">
+            <img src="https://i.imgur.com/pnDfXLo.png" alt="Can not find the image source." id="cloud-img">
+        </div>
+
+        <!-- The timer background img -->
+        <div class="timerbackground">
+            <img src="https://i.imgur.com/IUOlsqi.png" alt="Can not find the image source." id="timerbackgroundimg">
+        </div>
+
+        <!-- The timer -->
+        <div id="showtime">
+
+        </div>
+
+        <!-- The backbutton img -->
+        <div class="backbutton">
+            <a href="~/Home/ChooseRooms">
+                <img src="https://i.imgur.com/oYTrppb.png" alt="Can not find the image source."
+                     class="back-button">
+            </a>
+        </div>
+        <audio src="~/Content/bensound-buddy.mp3" autoplay type="audio/mpeg"></audio>
+
+        <div class="items finish">
+            <a href="~/Home/LivingroomVisual">
+                <img src="https://i.imgur.com/BjUeJPr.png" alt="Can not find the image source."
+                     class="finish-button">
+        </div>
+    </div>
+
+    <script>
+
+        var sun = document.getElementById("sun-img");
+        sun.style.display = "none";
+
+        var sky = document.getElementById("sky-img");
+        sky.style.display = "none";
+
+        var grass = document.getElementById("grass-img");
+        grass.style.display = "none";
+
+        var tree1 = document.getElementById("tree1-img");
+        tree1.style.display = "none";
+
+        var tree2 = document.getElementById("tree2-img");
+        tree2.style.display = "none";
+
+        var cloud = document.getElementById("cloud-img");
+        cloud.style.display = "none";
+
+        var ac = document.getElementById("ac-on-img");
+
+        var fan = document.getElementById("fan-on-img");
+
+        var tablelight = document.getElementById("tablelight-on-img");
+
+        var toplight = document.getElementById("toplight-on-img");
+
+    </script>
+</body>
+
+</html>
